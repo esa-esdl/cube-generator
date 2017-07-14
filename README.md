@@ -6,8 +6,17 @@ This repository contains the scripts as well as the configurations used for indi
 
 ## Pre-requisites
 
+* Miniconda
+  * Install [Miniconda](https://conda.io/miniconda.html)
+  * `cd cablab-core`
+  * `conda env create --file=environment.yml`
+  * `source activate esdc` (Linux) or `activate esdc` (Windows)
 * cablab-core
+  * `git clone https://github.com/CAB-LAB/cablab-core.git`
+  * `cd cablab-core`
+  * `python setup.py install`
 * cube directory (where the generated data will be located)
+  * `mkdir <cube directory name>` 
 
 ## Generation
 
