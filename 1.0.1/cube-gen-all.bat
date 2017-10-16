@@ -72,8 +72,8 @@ cube-gen "%cube_path%\high-res" "snow_water_equivalent;dir=%source_dir%\SWE"
 cube-gen "%cube_path%\low-res" "soil_moisture;dir=%source_dir%\ECV_sm"
 cube-gen "%cube_path%\high-res" "soil_moisture;dir=%source_dir%\ECV_sm"
 
-cube-gen "%cube_path%\low-res" "gross_primary_production;dir=%source_dir%\MPI_BGC\GPP;var=GPPall"
-cube-gen "%cube_path%\high-res" "gross_primary_production;dir=%source_dir%\MPI_BGC\GPP;var=GPPall"
+cube-gen "%cube_path%\low-res" "gross_primary_productivity;dir=%source_dir%\MPI_BGC\GPP;var=GPPall"
+cube-gen "%cube_path%\high-res" "gross_primary_productivity;dir=%source_dir%\MPI_BGC\GPP;var=GPPall"
 
 cube-gen "%cube_path%\low-res" "sensible_heat;dir=%source_dir%\MPI_BGC\H;var=H"
 cube-gen "%cube_path%\high-res" "sensible_heat;dir=%source_dir%\MPI_BGC\H;var=H"
