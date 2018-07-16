@@ -2,26 +2,26 @@
 
 This repository contains the scripts as well as the configurations used for individual Earth System Data Cube (ESDC) productions. 
 
-# Cube generation
+## Cube generation
 
-## Pre-requisites
+### Pre-requisites
 
+* esdl-core
+  * `git clone https://github.com/esa-esdl/esdl-core.git`
+  * `cd esdl-core`
+  * `python setup.py install`
 * Miniconda
   * Install [Miniconda](https://conda.io/miniconda.html)
-  * `cd cablab-core`
+  * `cd esdl-core`
   * `conda env create --file=environment.yml`
-  * `source activate esdc` (Linux) or `activate esdc` (Windows)
-* cablab-core
-  * `git clone https://github.com/CAB-LAB/cablab-core.git`
-  * `cd cablab-core`
-  * `python setup.py install`
+  * `source activate esdl` (Linux) or `activate esdl` (Windows)
 * cube directory (where the generated data will be located)
   * `mkdir <cube directory name>` 
 
-## Generation
+### Generation
 
-1. `git clone https://github.com/CAB-LAB/cube-config.git`
-2. `cd cube-config/<cube version directory>`
+1. `git clone https://github.com/esa-esdl/cube-generator.git`
+2. `cd cube-generator/scripts`
 3. Run the following:
-   * **Windows**: `cube-gen-all.bat <source directory> <cube directory>`
-   * **Linux**: `./cube-gen-all.sh <source directory> <cube directory>`
+   * **Windows**: `cube-gen.bat <cube-high-res.config|cube-low-res.config|cube-super-low-res.config> <source directory> <cube directory>`
+   * **Linux**: `./cube-gen.sh <cube-high-res.config|cube-low-res.config|cube-super-low-res.config> <source directory> <cube directory>`

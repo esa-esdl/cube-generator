@@ -1,11 +1,10 @@
-SET source_dir=%1
-SET cube_path=%2
+SET cube_config=%1
+SET source_dir=%2
+SET cube_path=%3
 
-SET cube_config_high_res="cube-high-res.config"
+SET START_TIME=%TIME%
 
-SET STARTTIME=%TIME%
-
-cube-gen "%cube_path%" "burnt_area;dir=%source_dir%\BurntArea" -c %cube_config_high_res%
+cube-gen "%cube_path%" "burnt_area;dir=%source_dir%\BurntArea" -c %cube_config%
 cube-gen "%cube_path%" "aerosols;dir=%source_dir%\CCI-Aerosols\AATSR_SU_v4.1\L3_DAILY"
 cube-gen "%cube_path%" "air_temperature;dir=%source_dir%\T2m-ECMWF\low"
 cube-gen "%cube_path%" "albedo;dir=%source_dir%\globalbedo_CF_compliant\\05deg\\8daily"
@@ -35,8 +34,10 @@ cube-gen "%cube_path%" "terrestrial_ecosystem_respiration;dir=%source_dir%\MPI_B
 cube-gen "%cube_path%" "country_mask;dir=%source_dir%\CountryCodes-ISO3166"
 cube-gen "%cube_path%" "water_mask;dir=%source_dir%\WaterBodies4.0"
 cube-gen "%cube_path%" "srex_mask;dir=%source_dir%\SREX_mask"
+cube-gen "%cube_path%" "lai_fapar_tip;dir=%source_dir%\bhr_tip\daily"
+cube-gen "%cube_path%" "albedo_avhrr;dir=%source_dir%\broadband\daily"
 
-SET ENDTIME=%TIME%
+SET END_TIME=%TIME%
 
-echo STARTTIME: %STARTTIME%
-echo ENDTIME: %ENDTIME%
+echo START_TIME: %START_TIME%
+echo END_TIME: %END_TIME%

@@ -1,13 +1,12 @@
 #!/usr/bin/env bash
 
-source_dir=$1
-cube_path=$2
+cube_config=$1
+source_dir=$2
+cube_path=$3
 
-cube_config_high_res="cube-high-res.config"
+START_TIME=$(date)
 
-STARTTIME=$(date)
-
-cube-gen "$cube_path" "burnt_area:dir=$source_dir/BurntArea" -c $cube_config_high_res
+cube-gen "$cube_path" "burnt_area:dir=$source_dir/BurntArea" -c ${cube_config}
 cube-gen "$cube_path" "aerosols:dir=$source_dir/CCI-Aerosols/AATSR_SU_v4.1/L3_DAILY"
 cube-gen "$cube_path" "air_temperature:dir=$source_dir/T2m-ECMWF/low"
 cube-gen "$cube_path" "albedo:dir=$source_dir/globalbedo_CF_compliant/05deg/8daily"
@@ -37,8 +36,10 @@ cube-gen "$cube_path" "terrestrial_ecosystem_respiration:dir=$source_dir/MPI_BGC
 cube-gen "$cube_path" "country_mask:dir=$source_dir/CountryCodes-ISO3166"
 cube-gen "$cube_path" "water_mask:dir=$source_dir/WaterBodies4.0"
 cube-gen "$cube_path" "srex_mask:dir=$source_dir/SREX_mask"
+cube-gen "$cube_path" "lai_fapar_tip:dir=$source_dir/bhr_tip/daily"
+cube-gen "$cube_path" "albedo_avhrr:dir=$source_dir/broadband/daily"
 
-ENDTIME=$(date)
+END_TIME=$(date)
 
-echo STARTTIME: $STARTTIME
-echo ENDTIME: $ENDTIME
+echo STARTTIME: ${START_TIME}
+echo ENDTIME: ${END_TIME}
