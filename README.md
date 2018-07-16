@@ -15,8 +15,6 @@ This repository contains the scripts as well as the configurations used for indi
   * `cd esdl-core`
   * `conda env create --file=environment.yml`
   * `source activate esdl` (Linux) or `activate esdl` (Windows)
-* cube directory (where the generated data will be located)
-  * `mkdir <cube directory name>` 
 
 ### Generation
 
@@ -25,3 +23,4 @@ This repository contains the scripts as well as the configurations used for indi
 3. Run the following:
    * **Windows**: `cube-gen.bat <cube-high-res.config|cube-low-res.config|cube-super-low-res.config> <source directory> <cube directory>`
    * **Linux**: `./cube-gen.sh <cube-high-res.config|cube-low-res.config|cube-super-low-res.config> <source directory> <cube directory>`
+   **NOTE**: Use the following naming convention for the cube directory name: https://github.com/esa-esdl/cube-generator/wiki/Cube-file-structure-and-naming-convention
