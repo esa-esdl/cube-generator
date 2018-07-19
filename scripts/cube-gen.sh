@@ -36,8 +36,8 @@ cube-gen "$cube_path" "terrestrial_ecosystem_respiration:dir=$source_dir/MPI_BGC
 cube-gen "$cube_path" "country_mask:dir=$source_dir/CountryCodes-ISO3166"
 cube-gen "$cube_path" "water_mask:dir=$source_dir/WaterBodies4.0"
 cube-gen "$cube_path" "srex_mask:dir=$source_dir/SREX_mask"
-cube-gen "$cube_path" "lai_fapar_tip:dir=$source_dir/bhr_tip/daily"
-cube-gen "$cube_path" "albedo_avhrr:dir=$source_dir/broadband/daily"
+cube-gen "$cube_path" "lai_fapar_tip:dir=$source_dir/qa4ecv/bhr_tip/daily"
+cube-gen "$cube_path" "albedo_avhrr:dir=$source_dir/qa4ecv/broadband/daily"
 
 END_TIME=$(date)
 
