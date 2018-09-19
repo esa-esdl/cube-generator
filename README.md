@@ -6,15 +6,16 @@ This repository contains the scripts as well as the configurations used for indi
 
 ### Pre-requisites
 
-* esdl-core
-  * `git clone https://github.com/esa-esdl/esdl-core.git`
-  * `cd esdl-core`
-  * `python setup.py install`
 * Miniconda
   * Install [Miniconda](https://conda.io/miniconda.html)
   * `cd esdl-core`
   * `conda env create --file=environment.yml`
   * `source activate esdl` (Linux) or `activate esdl` (Windows)
+* esdl-core
+  * activate esdl miniconda env (see previous steps)
+  * `git clone https://github.com/esa-esdl/esdl-core.git`
+  * `cd esdl-core`
+  * `python setup.py install`
 
 ### Generation
 
