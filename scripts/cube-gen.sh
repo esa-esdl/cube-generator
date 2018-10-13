@@ -7,7 +7,7 @@ cube_config=$4
 
 START_TIME=$(date)
 
-cube-gen "$cube_path" "$cube_provider:dir=$source_dir" -c ${cube_config}
+echo cube-gen "$cube_path" "$cube_provider:dir=$source_dir" -c ${cube_config}
 
 END_TIME=$(date)
 

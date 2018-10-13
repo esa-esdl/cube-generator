@@ -1,5 +1,1 @@
-aerosols    burnt_area  ./BurntArea cube-low-res.config
-aerosols    aerosols  ./BurntArea cube-low-res.config
-aerosols    aerosols  ./BurntArea cube-low-res.config
-aerosols    aerosols  ./BurntArea cube-low-res.config
-aerosols    aerosols  ./BurntArea cube-low-res.config
+aerosols2    aerosols  ./aerosols cube-low-res.config
