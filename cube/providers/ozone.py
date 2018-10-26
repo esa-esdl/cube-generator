@@ -4,12 +4,12 @@ from datetime import datetime
 import netCDF4
 import numpy
 
-from esdl.cube_provider import NetCDFCubeSourceProvider
+from esdl.cate.cube_gen import CateCubeSourceProvider
 
 
-class OzoneProvider(NetCDFCubeSourceProvider):
+class OzoneProvider(CateCubeSourceProvider):
     def __init__(self, cube_config, name='ozone', dir=None, resampling_order=None):
-        super(OzoneProvider, self).__init__(cube_config, name, dir, resampling_order)
+        super().__init__(cube_config, name, dir, resampling_order)
         self.old_indices = None
 
     @property
@@ -27,7 +27,7 @@ class OzoneProvider(NetCDFCubeSourceProvider):
                               'Sounding (MIPAS)." Remote Sensing of Environment 162 (2015): 316-343.',
                 'comment': 'Atmospheric ozone based on the Ozone CCI data.',
                 'url': 'http://www.esa-ozone-cci.org/',
-                'project_name' : 'Ozone CCI',
+                'project_name': 'Ozone CCI',
             }
         }
 
