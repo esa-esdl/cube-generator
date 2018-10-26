@@ -1,0 +1,3 @@
+[submodule "asub"]
+	path = asub
+	url = https://github.com/lh3/asub
