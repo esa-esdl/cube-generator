@@ -54,8 +54,10 @@ setup(
     entry_points={
         'esdl.source_providers': [
             'ozone_phi = cube.providers.ozone:OzoneProvider',
+            'ozone_temis = cube.providers.ozone_temis:OzoneTemisProvider',
             'ch4 = cube.providers.ch4:CH4Provider',
             'co2 = cube.providers.co2:CO2Provider',
+            'aerosol_phi = cube.providers.aerosols:AerosolsProvider',
         ],
     },
     # *Minimum* requirements
