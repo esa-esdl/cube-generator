@@ -1,6 +1,6 @@
-# cube-generator
+# Earth System Data Cube Version 1.0.2_2 (ESDCv1.0.2_2)
 
-This repository contains the scripts as well as the configurations used for individual Earth System Data Cube (ESDC) productions. 
+This repository contains the scripts, configurations as well as providers used for individual Earth System Data Cube (ESDC) productions. The repository also contains md5 sums of the released data. 
 
 ## Cube generation
 
