@@ -1,1 +1,0 @@
-aerosols2    aerosols  ./aerosols cube-low-res.config

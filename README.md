@@ -4,25 +4,32 @@ This repository contains the scripts, configurations as well as providers used f
 
 ## Cube generation
 
-### Pre-requisites
+### Install Pre-requisites for cube generation
 
 * Miniconda
   * Install [Miniconda](https://conda.io/miniconda.html)
-  * `cd esdl-core`
+* Install cate
+  * `git clone https://github.com/esa-esdl/cube-generator.git`
+  * `cd [cube-generator]/cate`
   * `conda env create --file=environment.yml`
-  * `source activate esdl` (Linux) or `activate esdl` (Windows)
-* esdl-core
-  * activate esdl miniconda env (see previous steps)
-  * `git clone https://github.com/esa-esdl/esdl-core.git`
-  * `cd esdl-core`
+  * `source activate cate` (Linux) or `activate esdl` (Windows)
+  * `python setup.py  install`
+* Install esdl-core
+  * `cd [cube-generator]/esdl-core`
   * `python setup.py install`
+  * Run `cuge-gen` to test whether the software is correctly installed
 
 ### Generation
 
-1. `git clone https://github.com/esa-esdl/cube-generator.git`
-2. `cd cube-generator/scripts`
+The esdl core library contains data providers already. However, for this version we developed new
+providers for new and updated variables. They are stored in teh sub directory `cube/providers`. In order
+to activate them, you have to run `python setup.py` from the cube-generator root directory. 
+
+### Adding and updating Variables for v1.0.2_2
+
+1. `cd [cube-generator]/scripts`
 3. Run the following:
-   * **Windows**: `cube-gen.bat <cube-high-res.config|cube-low-res.config|cube-super-low-res.config> <source directory> <cube directory>`
-   * **Linux**: `./cube-gen.sh <cube-high-res.config|cube-low-res.config|cube-super-low-res.config> <source directory> <cube directory>`
+   * **Windows**: `cube-gen.bat`
+   * **Linux**: `./cube-gen.sh`
 
 **NOTE**: Use the following naming convention for the cube directory name: https://github.com/esa-esdl/cube-generator/wiki/Cube-file-structure-and-naming-convention
