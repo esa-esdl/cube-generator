@@ -1,65 +1,6 @@
 # The ESDC data cube v 1.0.2_2
 
 
-## Usage
-
-
-
-__Open a Cube (config: 8d, 0.25deg)__
-
-```
-import xarray as xr
-ds = xr.open_zarr('/home/jovyan/work/datacube/ESDCv1.0.2_2/esdc-8d-0.25deg-1x720x1440-1.0.2_2.zarr')
-ds
-```
-
-
-__Open a variable (e.g. par)__
-
-```
-
-ds.par
-
-```
-
-__Plot a time step__
-
-```
-
-v = ds.par.sel(time='2003-01-05')
-v.plot()
-
-```
-
-__Plot a regional subset__:
-
-```
-
-v = ds.par.loc[dict(lat=slice(40, -20), lon=slice(-20, 20), time='2003-01-05')]
-v.plot()
-```
-
-
-__Plot a time step close to your choice__
-
-```
-
-v = ds.par.sel(time='2003-01-08', method='nearest')
-v.plot()
-
-```
-
-
-__Plot a time series of a cell close to a spatial location__
-
-
-```
-v = ds.par.sel(dict(lat=51, lon=10), method='nearest')
-v.plot()
-
-```
-
-
 # cube-generator
 
 This repository contains the scripts as well as the configurations used for individual Earth System Data Cube (ESDC) productions. 
@@ -165,6 +106,63 @@ The repository also contains md5 sums of the released data.
 ## Metainfo Variables
 
 Refer to [CSV document](metainfo/ESDL_metadata_variables.csv)
+
+## Usage
+
+__Open a Cube (config: 8d, 0.25deg)__
+
+```
+import xarray as xr
+ds = xr.open_zarr('/home/jovyan/work/datacube/ESDCv1.0.2_2/esdc-8d-0.25deg-1x720x1440-1.0.2_2.zarr')
+ds
+```
+
+
+__Open a variable (e.g. par)__
+
+```
+
+ds.par
+
+```
+
+__Plot a time step__
+
+```
+
+v = ds.par.sel(time='2003-01-05')
+v.plot()
+
+```
+
+__Plot a regional subset__:
+
+```
+
+v = ds.par.loc[dict(lat=slice(40, -20), lon=slice(-20, 20), time='2003-01-05')]
+v.plot()
+```
+
+
+__Plot a time step close to your choice__
+
+```
+
+v = ds.par.sel(time='2003-01-08', method='nearest')
+v.plot()
+
+```
+
+
+__Plot a time series of a cell close to a spatial location__
+
+
+```
+v = ds.par.sel(dict(lat=51, lon=10), method='nearest')
+v.plot()
+
+```
+
 
 ## Cube generation
 ### Installing Pre-requisites for the Cube Generation
