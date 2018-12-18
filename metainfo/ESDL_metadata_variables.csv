@@ -1,0 +1,80 @@
+ID	project_name	long_name	url	esa_cci_path	orig_version	vname	miny	maxy
+1	BESS	Diffuse Photosynthetically Active Radiation	http://environment.snu.ac.kr/bess_rad/		15.10.2017	pardiff	01.03.2000	30.12.2016
+2	BESS	Downwelling shortwave radiation	http://environment.snu.ac.kr/bess_rad/		15.10.2017	Rg	01.03.2000	31.12.2010
+3	BESS	Photosynthetically Active Radiation	http://environment.snu.ac.kr/bess_rad/		15.10.2017	par	01.03.2000	30.12.2016
+4	ERA5	2 Metre Air Temperature	https://confluence.ecmwf.int//display/CKB/ERA5+data+documentation		ERA5	air_temperature_2m	05.01.2000	30.12.2016
+5	ERA5	ERA5 Precipitation	https://confluence.ecmwf.int//display/CKB/ERA5+data+documentation		ERA5	precipitation_era5	05.01.2000	30.12.2016
+6	ERA5	Maximum 2 Metre Air Temperature	https://confluence.ecmwf.int//display/CKB/ERA5+data+documentation		ERA5	max_air_temperature_2m	05.01.2000	30.12.2016
+7	ERA5	Minimum 2 Metre Air Temperature	https://confluence.ecmwf.int//display/CKB/ERA5+data+documentation		ERA5	min_air_temperature_2m	05.01.2000	30.12.2016
+8	ESA - Near-real time total ozone column (OMI)	Residual MSR-FLT (Stratospheric Part Partial)	http://www.temis.nl/protocols/tropo.html		v.1.2.3.1	free_msr_flt	05.01.2008	31.12.2011
+9	ESA - Near-real time total ozone column (OMI)	Residual MSR-FLT (Stratospheric Part Partial)	http://www.temis.nl/protocols/tropo.html		v.1.2.3.1	msr_flt	05.01.2008	31.12.2011
+10	ESA - Near-real time total ozone column (OMI)	Residual MSR-LRT (Stratospheric Part Partial)	http://www.temis.nl/protocols/tropo.html		v.1.2.3.1	free_msr_lrt	05.01.2008	31.12.2011
+11	ESA - Near-real time total ozone column (OMI)	Residual MSR-LRT (Stratospheric Part Partial)	http://www.temis.nl/protocols/tropo.html		v.1.2.3.1	msr_lrt	05.01.2008	31.12.2011
+12	ESA - Near-real time total ozone column (OMI)	Surface Air Pressure	http://www.temis.nl/protocols/tropo.html		v.1.2.3.1	psurf	05.01.2008	31.12.2011
+13	ESA - Near-real time total ozone column (OMI)	Total Ozone Column (Assimilated TM5 data)	http://www.temis.nl/protocols/tropo.html		v.1.2.3.1	totcol_assim	05.01.2008	31.12.2011
+14	ESA - Near-real time total ozone column (OMI)	Total Ozone Column (Assimilated TM5 data)	http://www.temis.nl/protocols/tropo.html		v.1.2.3.1	totcol_free	05.01.2008	31.12.2011
+15	ESA - Near-real time total ozone column (OMI)	Total Ozone Column (MSR data)	http://www.temis.nl/protocols/tropo.html		v.1.2.3.1	totcol_msr	05.01.2008	31.12.2011
+16	ESA - Near-real time total ozone column (OMI)	Tropopause Air Pressure (Lapse Rate)	http://www.temis.nl/protocols/tropo.html		v.1.2.3.1	lrt_p	05.01.2008	31.12.2011
+17	ESA - Near-real time total ozone column (OMI)	Tropopause Air Pressure for the Fixed Altitude Tropopause	http://www.temis.nl/protocols/tropo.html		v.1.2.3.1	fat_p	05.01.2008	31.12.2011
+18	ESA - Near-real time total ozone column (OMI)	Tropopause Air Pressure for the Fixed Layer Tropopause	http://www.temis.nl/protocols/tropo.html		v.1.2.3.1	flt_p	05.01.2008	31.12.2011
+19	ESA - Near-real time total ozone column (OMI)	Tropospheric Ozone Column	http://www.temis.nl/protocols/tropo.html		v.1.2.3.1	flt_c	05.01.2008	31.12.2011
+20	ESA - Near-real time total ozone column (OMI)	Tropospheric Ozone Column ( Lapse Rate) 	http://www.temis.nl/protocols/tropo.html		v.1.2.3.1	free_lrt_c	05.01.2008	31.12.2011
+21	ESA - Near-real time total ozone column (OMI)	Tropospheric Ozone Column (Fixed Altitude)	http://www.temis.nl/protocols/tropo.html		v.1.2.3.1	fat_c	05.01.2008	31.12.2011
+22	ESA - Near-real time total ozone column (OMI)	Tropospheric Ozone Column (Fixed Altitude)	http://www.temis.nl/protocols/tropo.html		v.1.2.3.1	free_fat_c	05.01.2008	31.12.2011
+23	ESA - Near-real time total ozone column (OMI)	Tropospheric Ozone Column (Fixed Layers)	http://www.temis.nl/protocols/tropo.html		v.1.2.3.1	free_flt_c	05.01.2008	31.12.2011
+24	ESA - Near-real time total ozone column (OMI)	Tropospheric Ozone Column (Lapse Rate)	http://www.temis.nl/protocols/tropo.html		v.1.2.3.1	lrt_c	05.01.2008	31.12.2011
+25	ESA Aerosol CCI	Aerosol optical thickness at 1600 nm	http://www.esa-aerosol-cci.org/	/neodc/esacci/aerosol/data/AATSR_SU/L3/v4.21/DAILY/	v4.21	AOD1600_mean	24.07.2002	10.04.2012
+26	ESA Aerosol CCI	Aerosol optical thickness at 550 nm	http://www.esa-aerosol-cci.org/	/neodc/esacci/aerosol/data/AATSR_SU/L3/v4.21/DAILY/	v4.21	AOD550_mean	24.07.2002	10.04.2012
+27	ESA Aerosol CCI	Aerosol optical thickness at 670 nm	http://www.esa-aerosol-cci.org/	/neodc/esacci/aerosol/data/AATSR_SU/L3/v4.21/DAILY/	v4.21	AOD670_mean	24.07.2002	10.04.2012
+28	ESA Aerosol CCI	Aerosol optical thickness at 870 nm	http://www.esa-aerosol-cci.org/	/neodc/esacci/aerosol/data/AATSR_SU/L3/v4.21/DAILY/	v4.21	AOD870_mean	24.07.2002	10.04.2012
+29	ESA CCI Ocean Colour Product	Chlorophyll-a Concentration in Seawater	http://esa-oceancolour-cci.org	/neodc/esacci/ocean_colour/data/v3.1-release/geographic/netcdf/chlor_a/daily/v3.1	v3.1	chlor_a	02.09.1997	30.12.2016
+30	ESA Cloud Climate Change Initiative (Cloud_cci)	Cloud Effective Emissivity at 10.8 um	http://www.dwd.de	/neodc/esacci/cloud/data/phase-2/L3C/MODIS-TERRA/v2.0/	v2.0	cee	29.01.2000	31.12.2014
+31	ESA Cloud Climate Change Initiative (Cloud_cci)	Cloud Effective Radius	http://www.dwd.de	/neodc/esacci/cloud/data/phase-2/L3C/MODIS-TERRA/v2.0/	v2.0	cer	29.01.2000	31.12.2014
+32	ESA Cloud Climate Change Initiative (Cloud_cci)	Cloud fraction	http://www.dwd.de	/neodc/esacci/cloud/data/phase-2/L3C/MODIS-TERRA/v2.0/	v2.0	cfc	29.01.2000	31.12.2014
+33	ESA Cloud Climate Change Initiative (Cloud_cci)	Cloud Ice Water Path	http://www.dwd.de	/neodc/esacci/cloud/data/phase-2/L3C/MODIS-TERRA/v2.0/	v2.0	iwp	29.01.2000	31.12.2014
+34	ESA Cloud Climate Change Initiative (Cloud_cci)	Cloud Liquid Water Path	http://www.dwd.de	/neodc/esacci/cloud/data/phase-2/L3C/MODIS-TERRA/v2.0/	v2.0	lwp	29.01.2000	31.12.2014
+35	ESA Cloud Climate Change Initiative (Cloud_cci)	Cloud Optical Thickness	http://www.dwd.de	/neodc/esacci/cloud/data/phase-2/L3C/MODIS-TERRA/v2.0/	v2.0	cot	29.01.2000	31.12.2014
+36	ESA Cloud Climate Change Initiative (Cloud_cci)	Cloud Top Height	http://www.dwd.de	/neodc/esacci/cloud/data/phase-2/L3C/MODIS-TERRA/v2.0/	v2.0	cth	29.01.2000	31.12.2014
+37	ESA Cloud Climate Change Initiative (Cloud_cci)	Cloud Top Pressure	http://www.dwd.de	/neodc/esacci/cloud/data/phase-2/L3C/MODIS-TERRA/v2.0/	v2.0	ctp	29.01.2000	31.12.2014
+38	ESA Cloud Climate Change Initiative (Cloud_cci)	Cloud Top Temperature	http://www.dwd.de	/neodc/esacci/cloud/data/phase-2/L3C/MODIS-TERRA/v2.0/	v2.0	ctt	29.01.2000	31.12.2014
+39	ESA Cloud Climate Change Initiative (Cloud_cci)	Fraction of Liquid Water Clouds	http://www.dwd.de	/neodc/esacci/cloud/data/phase-2/L3C/MODIS-TERRA/v2.0/	v2.0	cph	29.01.2000	31.12.2014
+40	ESA Cloud Climate Change Initiative (Cloud_cci)	Surface Temperature	http://www.dwd.de	/neodc/esacci/cloud/data/phase-2/L3C/MODIS-TERRA/v2.0/	v2.0	stemp	29.01.2000	31.12.2014
+41	ESA Greenhouse Gases Climate Change Initiative (GHG_cci)	Column Average Dry-air Mole Fraction Carbon Dioxide	http://www.esa-ghg-cci.org/	/neodc/esacci/ghg/data/obs4mips/crdp_3/CO2/v100/	v100	xco2	13.01.2003	15.12.2014
+42	ESA Greenhouse Gases Climate Change Initiative (GHG_cci)	Column Average Dry-air Mole Fraction Methane	http://www.esa-ghg-cci.org/	/neodc/esacci/ghg/data/obs4mips/crdp_3/CO2/v100/	v100	xch4	13.01.2003	15.12.2014
+43	ESA Land Cover Climate Change Initiative (Land_Cover_cci)	Terrestrial or Water Pixel Classification	http://www.esa-landcover-cci.org	/neodc/esacci/land_cover/data/water_bodies/v4.0/	v4.0	water_mask	05.01.1980	05.01.1980
+44	ESA Sea Surface Temperature Climate Change Initiative (ESA SST CCI)	Analysed Sea Surface Temperature	http://www.esa-sst-cci.org	/neodc/esacci/sst/data/lt/Analysis/L4/v01.1/	v01.1	analysed_sst	02.09.1991	31.12.2010
+45	ESA Sea Surface Temperature Climate Change Initiative (ESA SST CCI)	Sea Ice Area Fraction	http://www.esa-sst-cci.org	/neodc/esacci/sst/data/lt/Analysis/L4/v01.1/	v01.1	sea_ice_fraction	02.09.1991	31.12.2010
+46	ESA Sea Surface Temperature Climate Change Initiative (ESA SST CCI)	Sea/Land/Lake/Ice Field Composite Mask	http://www.esa-sst-cci.org	/neodc/esacci/sst/data/lt/Analysis/L4/v01.1/	v01.1	mask	02.09.1991	31.12.2010
+47	FLUXCOM	Gross Primary Productivity	http://www.fluxcom.org/		v1	gross_primary_productivity	05.01.2001	31.12.2015
+48	FLUXCOM	Latent Energy	http://www.fluxcom.org/		v1	latent_energy	05.01.2001	31.12.2015
+49	FLUXCOM	Net Ecosystem Exchange	http://www.fluxcom.org/		v1	net_ecosystem_exchange	05.01.2001	31.12.2015
+50	FLUXCOM	Net Radiation	http://www.fluxcom.org/		v1	net_radiation	05.01.2001	31.12.2015
+51	FLUXCOM	Sensible Heat	http://www.fluxcom.org/		v1	sensible_heat	05.01.2001	31.12.2015
+52	FLUXCOM	Terrestrial Ecosystem Respiration	http://www.fluxcom.org/		v1	terrestrial_ecosystem_respiration	05.01.2001	30.12.2012
+53	GFED4	Carbon Dioxide Emissions Due to Natural Fires	http://www.globalfiredata.org/		gfed4	c_emissions	05.01.2001	31.12.2010
+54	GFED4	Monthly Burnt Area	http://www.globalfiredata.org/		gfed4	burnt_area	05.01.1995	02.03.2014
+55	GLEAM	Bare Soil Evaporation	http://www.gleam.eu		Version 3.2	bare_soil_evaporation	05.01.2003	30.12.2016
+56	GLEAM	Evaporation	http://www.gleam.eu		Version 3.2	evaporation	05.01.2003	30.12.2016
+57	GLEAM	Evaporative Stress Factor	http://www.gleam.eu		Version 3.2	evaporative_stress	05.01.2003	30.12.2016
+58	GLEAM	Interception Loss	http://www.gleam.eu		Version 3.2	interception_loss	05.01.2003	30.12.2016
+59	GLEAM	Open-Water Evaporation	http://www.gleam.eu		Version 3.2	open_water_evaporation	05.01.2003	30.12.2016
+60	GLEAM	Potential Evaporation	http://www.gleam.eu		Version 3.2	potential_evaporation	05.01.2003	30.12.2016
+61	GLEAM	Root-Zone Soil Moisture	http://www.gleam.eu		Version 3.2	root_moisture	05.01.2003	30.12.2016
+62	GLEAM	Snow Sublimation	http://www.gleam.eu		Version 3.2	snow_sublimation	05.01.2003	30.12.2016
+63	GLEAM	Surface Soil Moisture	http://www.gleam.eu		Version 3.2	surface_moisture	05.01.2003	30.12.2016
+64	GLEAM	Transpiration	http://www.gleam.eu		Version 3.2	transpiration	05.01.2003	30.12.2016
+65	GlobAlbedo	Black Sky Albedo for Visible Wavebands	http://www.globalbedo.org/			black_sky_albedo	05.01.1998	05.01.2012
+66	GlobAlbedo	White Sky Albedo for Visible Wavebands	http://www.globalbedo.org/			white_sky_albedo	05.01.1998	05.01.2012
+67	GlobSnow	Daily Snow Water Equivalent	http://www.globsnow.info/		v2.0	snow_water_equivalent	05.01.1980	30.12.2012
+68	GlobSnow	Surface Fraction Covered by Snow	http://www.globsnow.info/		v2.0	fractional_snow_cover	05.01.2003	05.01.2013
+69	GlobTemperature	Land Surface Temperature	http://data.globtemperature.info/			land_surface_temperature	21.05.2002	31.12.2011
+70	GlobVapour	Total Column Water Vapour	http://www.globvapour.info/			water_vapour	05.01.1996	30.12.2008
+71	GPCP	Precipitation	http://precip.gsfc.nasa.gov/			precipitation	05.01.1980	05.01.2015
+72	Ozone CCI	Mean Total Ozone Column in dobson units	http://www.esa-ozone-cci.org/	/neodc/esacci/ozone/data/total_columns/l3/merged/v0100/	v0100	ozone	09.03.1996	30.06.2011
+73	QA4ECV	Effective Leaf Area Index	http://www.qa4ecv.eu/			leaf_area_index	05.01.1982	30.12.2016
+74	QA4ECV	Fraction of Absorbed PAR	http://www.qa4ecv.eu/			fapar_tip	05.01.1982	30.12.2016
+75	QA4ECV - European Union Framework Program 7	Bi-Hemisphere Reflectance Albedo - VIS band	http://www.qa4ecv.eu/			white_sky_albedo_avhrr	05.01.1982	30.12.2016
+76	QA4ECV - European Union Framework Program 7	Directional Hemisphere Reflectance albedo - VIS band	http://www.qa4ecv.eu/			black_sky_albedo_avhrr	05.01.1982	30.12.2016
+77	regionmask - SREX Regions	Mask for SREX Regions	https://regionmask.readthedocs.io/			srex_mask	05.01.1980	05.01.1980
+78	SoilMoisture CCI	Soil Moisture	http://www.esa-soilmoisture-cci.org	/neodc/esacci/soil_moisture/data/daily_files/COMBINED/v04.2/	v04.2	soil_moisture	05.01.1980	29.01.2014
+79	ESA Land Cover Climate Change Initiative (Land_Cover_cci)	Country Mask	http://www.esa-landcover-cci.org	/neodc/esacci/land_cover/data/water_bodies/v4.0/	v1.6.1	country_mask	05.01.1980	05.01.1980
