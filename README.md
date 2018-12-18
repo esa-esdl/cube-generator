@@ -164,7 +164,7 @@ The repository also contains md5 sums of the released data.
 
 ## Metainfo Variables
 
-Refer to (CSV document)[metainfo/ESDL_metadata_variables.csv]
+Refer to [CSV document](metainfo/ESDL_metadata_variables.csv)
 
 ## Cube generation
 ### Installing Pre-requisites for the Cube Generation
