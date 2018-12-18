@@ -8,14 +8,14 @@ from esdl.cate.cube_gen import CateCubeSourceProvider
 
 
 class CH4Provider(CateCubeSourceProvider):
-    def __init__(self, cube_config, name='ozone', dir=None, resampling_order=None):
+    def __init__(self, cube_config, name='xch4', dir=None, resampling_order=None):
         super().__init__(cube_config, name, dir, resampling_order)
         self.old_indices = None
 
     @property
     def variable_descriptors(self):
         return {
-            'ozone': {
+            'xch4': {
                 'source_name': 'xch4',
                 'data_type': numpy.float64,
                 'fill_value': 1e+20,
@@ -78,4 +78,4 @@ class CH4Provider(CateCubeSourceProvider):
         :param source_image: 2D image
         :return: source_image
         """
-        return source_image
+        return numpy.flipud(source_image)

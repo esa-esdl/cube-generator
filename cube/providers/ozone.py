@@ -55,4 +55,4 @@ class OzoneProvider(CateCubeSourceProvider):
         # TODO (hans-permana, 20161219): the following line is a workaround to an issue where the nan values are
         # always read as -9.9. Find out why these values are automatically converted and create a better fix.
         source_image[source_image == -9.9] = numpy.nan
-        return numpy.roll(numpy.flipud(source_image), 180, axis=1)
+        return numpy.flipud(source_image)

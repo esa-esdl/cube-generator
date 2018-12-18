@@ -7,7 +7,7 @@ import numpy
 from esdl.cate.cube_gen import CateCubeSourceProvider
 
 class CO2Provider(CateCubeSourceProvider):
-    def __init__(self, cube_config, name='ozone', dir=None, resampling_order=None):
+    def __init__(self, cube_config, name='xco2', dir=None, resampling_order=None):
         super().__init__(cube_config, name, dir, resampling_order)
         self.old_indices = None
 
@@ -78,4 +78,5 @@ class CO2Provider(CateCubeSourceProvider):
         :param source_image: 2D image
         :return: source_image
         """
-        return source_image
+        return numpy.flipud(source_image)
+
