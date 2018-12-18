@@ -14,7 +14,7 @@ institution,,Brockmann Consult GmbH
 project,The scientific project that produced the data.,ESA Earth System Data Lab 
 processing_level,A textual description of the processing (or quality control) level of the data.,Level 4
 acknowledgment,A place to acknowledge various type of support for the project that produced this data.,The ESDL team acknowledges all data providers! 
-geospatial_lat_min,Describes a simple latitude, longitude, and vertical bounding box. For a more detailed geospatial coverage, see the suggested geospatial attributes.,-89,95761
+geospatial_lat_min,Describes a simple latitude, longitude and vertical bounding box. For a more detailed geospatial coverage, see the suggested geospatial attributes.,-89,95761
 geospatial_lat_max,,89,958336
 geospatial_lon_min,,-179,95833
 geospatial_lon_max,,179,9569
