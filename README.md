@@ -129,10 +129,16 @@ additional variables:
 The following variables were updated:
 
 - ozone 
+- All aerosol variables
 
 
 Version 1.0.2_2 uses the zarr format. Old formatted cubes can be found in
 the attic of teh ESDC platform. 
+
+## Meta Info
+
+- [1/12th degree cube](metainfo/ESDL_metadata_cube_high.csv)
+
 
 ## Cube generation
 
