@@ -246,7 +246,6 @@ The repository also contains md5 sums of the released data.
 | SoilMoisture CCI                                                    | Soil Moisture                                             | http://www.esa-soilmoisture-cci.org                               | /neodc/esacci/soil_moisture/data/daily_files/COMBINED/v04.2/                      | v04.2        | soil_moisture                     | 1980-01-05     | 2014-01-29   |  |
 
 
-
 ## Cube generation
 ### Installing Pre-requisites for the Cube Generation
 
