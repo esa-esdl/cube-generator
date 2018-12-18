@@ -1,7 +1,7 @@
 ﻿Attribute,Description ,Value
 title,A short description of the dataset.,Earth System Data Cube
-summary,A paragraph describing the dataset.,This data set contains a data cube of Earth System variables created by the ESA project Earth System Data Lab. 
-keywords,A comma separated list of key words and phrases.,Earth Science, Geophysical Variables
+summary,A paragraph describing the dataset,This data set contains a data cube of Earth System variables created by the ESA project Earth System Data Lab. 
+keywords,A comma separated list of key words and phrases, Earth Science - Geophysical Variables
 id,"The combination of the ""naming authority"" and the ""id"" should be a globally unique identifier for the dataset.",v1.0.2_2
 naming_authority,,Earth System Data Lab team
 history,Provides an audit trail for modifications to the original data.,- processing with esdl cube v0.1  (https://github.com/esa-esdl/esdl-core/)
