@@ -1,10 +1,6 @@
-# The ESDC data cube v2.0.0
+# Earth System Data Cube Version 2.0.0
 
-This repository contains the scripts as well as the configurations used for individual Earth System Data Cube (ESDC) productions. 
-
-# Earth System Data Cube Version 1.0.2_2 (ESDCv1.0.2_2)
-
-This repository contains the scripts, configurations as well as providers used for individual Earth System Data Cube (ESDC) production of version 1.0.2_2. 
+This repository contains the scripts, configurations as well as providers used for individual Earth System Data Cube (ESDC) production of version 2.0.0. 
 The repository also contains md5 sums of the released data.
 
 ## Meta Info
