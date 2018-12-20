@@ -25,7 +25,7 @@ ds
 
 __Open a variable (e.g. par)__
 
-```
+```python
 
 ds.par
 
@@ -33,7 +33,7 @@ ds.par
 
 __Plot a time step__
 
-```
+```python
 
 v = ds.par.sel(time='2003-01-05')
 v.plot()
@@ -42,7 +42,7 @@ v.plot()
 
 __Plot a regional subset__:
 
-```
+```python
 
 v = ds.par.loc[dict(lat=slice(40, -20), lon=slice(-20, 20), time='2003-01-05')]
 v.plot()
@@ -51,7 +51,7 @@ v.plot()
 
 __Plot a time step close to your choice__
 
-```
+```python
 
 v = ds.par.sel(time='2003-01-08', method='nearest')
 v.plot()
@@ -62,7 +62,7 @@ v.plot()
 __Plot a time series of a cell close to a spatial location__
 
 
-```
+```python
 v = ds.par.sel(dict(lat=51, lon=10), method='nearest')
 v.plot()
 
