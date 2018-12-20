@@ -16,7 +16,7 @@ Also use  [2018_12_03_cube_usage_examples.ipynb](2018_12_03_cube_usage_examples.
 
 __Open a Cube (config: 8d, 0.25deg)__
 
-```
+```{python}
 import xarray as xr
 ds = xr.open_zarr('/home/jovyan/work/datacube/ESDCv2.0.0/esdc-8d-0.25deg-1x720x1440-2.0.0.zarr')
 ds
