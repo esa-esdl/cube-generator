@@ -1,36 +1,36 @@
-﻿Attribute;Description ;Value
-title;A short description of the dataset.;Earth System Data Cube
-summary;A paragraph describing the dataset.;This data set contains a data cube of Earth System variables created by the ESA project Earth System Data Lab. 
-keywords;A comma separated list of key words and phrases.;Earth Science, Geophysical Variables
-id;"The combination of the ""naming authority"" and the ""id"" should be a globally unique identifier for the dataset.";v1.0.2_2
-naming_authority;;Earth System Data Lab team
-history;Provides an audit trail for modifications to the original data.;- processing with esdl cube v0.1  (https://github.com/esa-esdl/esdl-core/)
-comment;Miscellaneous information about the data.;none. 
-date_created;The date on which the data was created.;17.12.2018
-creator_name;"The data creator's name, URL, and email. The ""institution"" attribute will be used if the ""creator_name"" attribute does not exist. ";Brockmann Consult GmbH 
-creator_url;;www.earthsystemdatalab.net
-creator_email;;info@earthsystemdatalab.net
-institution;;Brockmann Consult GmbH 
-project;The scientific project that produced the data.;ESA Earth System Data Lab 
-processing_level;A textual description of the processing (or quality control) level of the data.;Level 4
-acknowledgment;A place to acknowledge various type of support for the project that produced this data.;The ESDL team acknowledges all data providers! 
-geospatial_lat_min;Describes a simple latitude, longitude, and vertical bounding box. For a more detailed geospatial coverage, see the suggested geospatial attributes.;-89,75
-geospatial_lat_max;;89,75
-geospatial_lon_min;;-179,75
-geospatial_lon_max;;179,75
-geospatial_resolution;;1/4deg
-time_coverage_start;Describes the temporal coverage of the data as a time range.;05.01.1980
-time_coverage_end;;30.12.2016
-time_coverage_duration;;13509
-time_coverage_resolution;;8d
-chunking;;1x720x1440
-standard_name_vocabulary;The name of the controlled vocabulary from which variable standard names are taken.;CF-1.7
-license;Describe the restrictions to data access and distribution.;Please refer to individuakl variables
-contributor_name;The name and role of any individuals or institutions that contributed to the creation of this data.;Max Planck Institute for Biogeochemistry
-contributor_role;;ESDL Science Lead 
-publisher_name;The data publisher's name, URL, and email. The publisher may be an individual or an institution.;Brockmann Consult GmbH & Max Planck Institute for Biogechemistry 
-publisher_url;;www.brockmann-consult.de
-publisher_email;;info@earthsystemdatalab.net
-date_modified;The date on which this data was last modified.;17.12.2018
-date_issued;The date on which this data was formally issued.;19.12.2018
-Metadata_conventions ;;Unidata Dataset Discovery v1.0
+﻿Attribute,Value
+title,Earth System Data Cube
+summary,This data set contains a data cube of Earth System variables created by the ESA project Earth System Data Lab. 
+keywords,"Earth Science, Geophysical Variables"
+id,v2.0.0
+naming_authority,Earth System Data Lab team
+history,- processing with esdl cube v0.1  (https://github.com/esa-esdl/esdl-core/)
+comment,none. 
+date_created,17.12.2018
+creator_name,Brockmann Consult GmbH 
+creator_url,www.earthsystemdatalab.net
+creator_email,info@earthsystemdatalab.net
+institution,Brockmann Consult GmbH 
+project,ESA Earth System Data Lab 
+processing_level,Level 4
+acknowledgment,The ESDL team acknowledges all data providers! 
+geospatial_lat_min,-89.75
+geospatial_lat_max,89.75
+geospatial_lon_min,-179.75
+geospatial_lon_max,179.75
+geospatial_resolution,1/4deg
+time_coverage_start,05.01.1980
+time_coverage_end,30.12.2016
+time_coverage_duration,P37Y
+time_coverage_resolution,P8D
+chunking,1x720x1440
+standard_name_vocabulary,CF-1.7
+license,Please refer to individual variables
+contributor_name,Max Planck Institute for Biogeochemistry
+contributor_role,ESDL Science Lead 
+publisher_name,Brockmann Consult GmbH & Max Planck Institute for Biogechemistry 
+publisher_url,www.brockmann-consult.de
+publisher_email,info@earthsystemdatalab.net
+date_modified,17.12.2018
+date_issued,19.12.2018
+Metadata_conventions ,Unidata Dataset Discovery v1.0
