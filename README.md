@@ -10,7 +10,7 @@ The repository also contains md5 sums of the released data.
 - [ESDL Cube variables 1/4 as well as 1/12 degree](metainfo/ESDL_metadata_variables.csv)
 
 
-## Usage examples
+## Getting started examples
 
 Also use  [2018_12_03_cube_usage_examples.ipynb](2018_12_03_cube_usage_examples.ipynb)
 
@@ -18,7 +18,7 @@ __Open a Cube (config: 8d, 0.25deg)__
 
 ```
 import xarray as xr
-ds = xr.open_zarr('/home/jovyan/work/datacube/ESDCv1.0.2_2/esdc-8d-0.25deg-1x720x1440-1.0.2_2.zarr')
+ds = xr.open_zarr('/home/jovyan/work/datacube/ESDCv2.0.0/esdc-8d-0.25deg-1x720x1440-2.0.0.zarr')
 ds
 ```
 
