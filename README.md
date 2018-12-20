@@ -1,110 +1,22 @@
-# The ESDC data cube v 1.0.2_2
+# The ESDC data cube v2.0.0
 
 This repository contains the scripts as well as the configurations used for individual Earth System Data Cube (ESDC) productions. 
-
-## Roadmap
-
-* Release of version 2.0.0 (Xmas 2018)
-  - Meta data fixed and completed
-  - Cube documented
-  - Examples given
-  - Cube in Object store
-  - Implementation of a proper versioning scheme
-* Visualisation of uncertainty (information entropy)
-* Adding a dynamic data loader from daily updated data (e.g. TEMIS)
 
 # Earth System Data Cube Version 1.0.2_2 (ESDCv1.0.2_2)
 
 This repository contains the scripts, configurations as well as providers used for individual Earth System Data Cube (ESDC) production of version 1.0.2_2. 
 The repository also contains md5 sums of the released data.
 
-## Meta Info Cube 1/12th Degree
+## Meta Info
 
-| Attribute                | Value                                                                                                          |
-| ------------------------ | -------------------------------------------------------------------------------------------------------------- |
-| title                    | Earth System Data Cube                                                                                         |
-| summary                  | This data set contains a data cube of Earth System variables created by the ESA project Earth System Data Lab. |
-| keywords                 | Earth Science - Geophysical Variables                                                                          |
-| id                       | v1.0.2_2                                                                                                       |
-| naming_authority         | Earth System Data Lab team                                                                                     |
-| history                  | processed with esdl cube v0.1  (https://github.com/esa-esdl/esdl-core/)                                        |
-| comment                  | none                                                                                                           |
-| date_created             | 2018-12-01                                                                                                     |
-| creator_name             | Brockmann Consult GmbH                                                                                         |
-| creator_url              | www.earthsystemdatalab.net                                                                                     |
-| creator_email            | info@earthsystemdatalab.net                                                                                    |
-| institution              | Brockmann Consult GmbH                                                                                         |
-| project                  | ESA Earth System Data Lab                                                                                      |
-| processing_level         | Level 4                                                                                                        |
-| acknowledgment           | The ESDL team acknowledges all data providers!                                                                 |
-| geospatial_lat_min       | -89.95761                                                                                                      |
-| geospatial_lat_max       | 89.958336                                                                                                      |
-| geospatial_lon_min       | -179.95833                                                                                                     |
-| geospatial_lon_max       | 179.9569                                                                                                       |
-| geospatial_resolution    | 1/12 deg                                                                                                       |
-| chunking                 | 1x2160x4320                                                                                                    |
-| time_coverage_start      | 1980-01-05                                                                                                     |
-| time_coverage_end        | 2016-12-31                                                                                                     |
-| time_coverage_duration   | 13509d                                                                                                         |
-| time_coverage_resolution | 8d                                                                                                             |
-| standard_name_vocabulary | CF-1.7                                                                                                         |
-| license                  | Please refer to individual variables                                                                           |
-| contributor_name         | Max Planck Institute for Biogeochemistry                                                                       |
-| contributor_role         | ESDL Science Lead                                                                                              |
-| publisher_name           | Brockmann Consult GmbH & Max Planck Institute for Biogechemistry                                               |
-| publisher_url            | www.brockmann-consult.de                                                                                       |
-| publisher_email          | info@earthsystemdatalab.net                                                                                    |
-| date_modified            | 2018-12-17                                                                                                     |
-| date_issued              | 2018-12-19                                                                                                     |
-| Metadata_conventions     | Unidata Dataset Discovery v1.0                                                                                 |
+- [ESDL Cube 1/4 degree](metainfo/ESDL_metadata_cube_low.csv)
+- [ESDL Cube 1/12 degree](metainfo/ESDL_metadata_cube_high.csv)
+- [ESDL Cube variables 1/4 as well as 1/12 degree](metainfo/ESDL_metadata_variables.csv)
 
 
-## Meta Info Cube 1/4th Degree
+## Usage examples
 
-| Attribute                | Value                                                                                                          |
-| ------------------------ | -------------------------------------------------------------------------------------------------------------- |
-| title                    | Earth System Data Cube                                                                                         |
-| summary                  | This data set contains a data cube of Earth System variables created by the ESA project Earth System Data Lab. |
-| keywords                 | Earth Science - Geophysical Variables                                                                          |
-| id                       | v1.0.2_2                                                                                                       |
-| naming_authority         | Earth System Data Lab team                                                                                     |
-| history                  | processed with esdl cube v0.1  (https://github.com/esa-esdl/esdl-core/)                                        |
-| comment                  | none                                                                                                           |
-| date_created             | 2018-12-01                                                                                                     |
-| creator_name             | Brockmann Consult GmbH                                                                                         |
-| creator_url              | www.earthsystemdatalab.net                                                                                     |
-| creator_email            | info@earthsystemdatalab.net                                                                                    |
-| institution              | Brockmann Consult GmbH                                                                                         |
-| project                  | ESA Earth System Data Lab                                                                                      |
-| processing_level         | Level 4                                                                                                        |
-| acknowledgment           | The ESDL team acknowledges all data providers!                                                                 |
-| geospatial_lat_min       | -89.75                                                                                                         |
-| geospatial_lat_max       | 89.75                                                                                                          |
-| geospatial_lon_min       | -179.75                                                                                                        |
-| geospatial_lon_max       | 179.75                                                                                                         |
-| geospatial_resolution    | 1/4 deg                                                                                                        |
-| chunking                 | 1x720x1440                                                                                                     |
-| time_coverage_start      | 1980-01-05                                                                                                     |
-| time_coverage_end        | 2016-12-31                                                                                                     |
-| time_coverage_duration   | 13509d                                                                                                         |
-| time_coverage_resolution | 8d                                                                                                             |
-| standard_name_vocabulary | CF-1.7                                                                                                         |
-| license                  | Please refer to individual variables                                                                           |
-| contributor_name         | Max Planck Institute for Biogeochemistry                                                                       |
-| contributor_role         | ESDL Science Lead                                                                                              |
-| publisher_name           | Brockmann Consult GmbH & Max Planck Institute for Biogechemistry                                               |
-| publisher_url            | www.brockmann-consult.de                                                                                       |
-| publisher_email          | info@earthsystemdatalab.net                                                                                    |
-| date_modified            | 2018-12-17                                                                                                     |
-| date_issued              | 2018-12-19                                                                                                     |
-| Metadata_conventions     | Unidata Dataset Discovery v1.0                                                                                 |
-
-
-## Metainfo Variables
-
-Refer to [CSV document](metainfo/ESDL_metadata_variables.csv)
-
-## Usage
+Also use  [2018_12_03_cube_usage_examples.ipynb](2018_12_03_cube_usage_examples.ipynb)
 
 __Open a Cube (config: 8d, 0.25deg)__
 

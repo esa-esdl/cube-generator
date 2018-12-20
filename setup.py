@@ -58,6 +58,13 @@ setup(
             'ch4 = cube.providers.ch4:CH4Provider',
             'co2 = cube.providers.co2:CO2Provider',
             'aerosol_phi = cube.providers.aerosols:AerosolsProvider',
+            'sst = cube.providers.sst:SSTProvider',
+            'oc = cube.providers.oc:OCProvider',
+            'cloud = cube.providers.cloud:CloudProvider',
+            'soil_moisture_esacci = cube.providers.soil_moisture_esacci:SoilMoistureESACCIProvider',
+            'chirp = cube.providers.chirp:CHIRPProvider',
+            'snow = cube.providers.snow:SnowProvider',
+            'lc = cube.providers.lc:LCProvider',
         ],
     },
     # *Minimum* requirements
