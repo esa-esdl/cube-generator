@@ -12,7 +12,7 @@ The repository also contains md5 sums of the released data.
 
 ## Getting started examples
 
-Also use  [2018_12_03_cube_usage_examples.ipynb](2018_12_03_cube_usage_examples.ipynb)
+Also use  [2018_12_03_cube_usage_examples.ipynb](cube_getting_started.ipynb)
 
 __Open a Cube (config: 8d, 0.25deg)__
 
