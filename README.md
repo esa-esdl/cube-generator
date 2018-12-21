@@ -91,7 +91,7 @@ The esdl core library contains data providers already. However, for this version
 providers for new and updated variables. They are stored in the sub-directory `cube/providers`. In order
 to activate them, you have to run `python setup.py` from the cube-generator root directory. 
 
-### Adding and updating Variables for v1.0.2_2
+### Adding and updating Variables for v2.0.0
 
 1. `cd [cube-generator]/scripts`
 2. rsync down cube
@@ -102,10 +102,7 @@ to activate them, you have to run `python setup.py` from the cube-generator root
 7. rsync cube up
 8. commit new md5sums to repo
 
-The cube version 1.0.2_2 uses the zarr data format. Zarr serialises chunked
-data and, thus, is comprised of a large number of small files for each variable.
-
-The following script will generate a total md5sums for each directory.
+The cube version 2.0.0 uses the zarr data format. The zarr data format consists of a large number of small files for each variable. The following script will, therefore, generate a total md5sums for each directory.
 
 ```
 bash scripts/checksum.sh -c [cube]
