@@ -1,0 +1,9 @@
+[submodule "asub"]
+	path = asub
+	url = https://github.com/lh3/asub
+[submodule "cate"]
+	path = cate
+	url = https://github.com/CCI-Tools/cate
+[submodule "esdl-core"]
+	path = esdl-core
+	url = https://github.com/esa-esdl/esdl-core

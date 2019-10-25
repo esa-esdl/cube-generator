@@ -1,45 +1,42 @@
 #!/usr/bin/env bash
 
-cube_config=$1
-source_dir=$2
-cube_path=$3
+cube_path=$1
+cube_provider=$2
+source_dir=$3
+cube_config=$4
 
 START_TIME=$(date)
 
-cube-gen "$cube_path" "burnt_area:dir=$source_dir/BurntArea" -c ${cube_config}
-cube-gen "$cube_path" "aerosols:dir=$source_dir/CCI-Aerosols/AATSR_SU_v4.1/L3_DAILY"
-cube-gen "$cube_path" "air_temperature:dir=$source_dir/T2m-ECMWF/low"
-cube-gen "$cube_path" "albedo:dir=$source_dir/globalbedo_CF_compliant/05deg/8daily"
-cube-gen "$cube_path" "c_emissions:dir=$source_dir/Fire_C_Emissions"
-cube-gen "$cube_path" "root_moisture:dir=$source_dir/GLEAM/v3a_BETA:var=SMroot"
-cube-gen "$cube_path" "evaporation:dir=$source_dir/GLEAM/v3a_BETA:var=E"
-cube-gen "$cube_path" "evaporative_stress:dir=$source_dir/GLEAM/v3a_BETA:var=S"
-cube-gen "$cube_path" "potential_evaporation:dir=$source_dir/GLEAM/v3a_BETA:var=Ep"
-cube-gen "$cube_path" "interception_loss:dir=$source_dir/GLEAM/v3a_BETA:var=Ei"
-cube-gen "$cube_path" "surface_moisture:dir=$source_dir/GLEAM/v3a_BETA:var=SMsurf"
-cube-gen "$cube_path" "bare_soil_evaporation:dir=$source_dir/GLEAM/v3a_BETA:var=Eb"
-cube-gen "$cube_path" "snow_sublimation:dir=$source_dir/GLEAM/v3a_BETA:var=Es"
-cube-gen "$cube_path" "transpiration:dir=$source_dir/GLEAM/v3a_BETA:var=Et"
-cube-gen "$cube_path" "open_water_evaporation:dir=$source_dir/GLEAM/v3a_BETA:var=Ew"
-cube-gen "$cube_path" "globvapour:dir=$source_dir/globvapour/GOME_SCIA_GOME2/monthly"
-cube-gen "$cube_path" "land_surface_temperature:dir=$source_dir/globtemperature/ftp2.globtemperature.info/AATSR/L3"
-cube-gen "$cube_path" "ozone:dir=$source_dir/Ozone-CCI/Total_Columns/L3/MERGED"
-cube-gen "$cube_path" "precip:dir=$source_dir/CPC_precip"
-cube-gen "$cube_path" "snow_area_extent:dir=$source_dir/SnowAreaExtent:resampling_order=space_first"
-cube-gen "$cube_path" "snow_water_equivalent:dir=$source_dir/SWE"
-cube-gen "$cube_path" "soil_moisture:dir=$source_dir/ECV_sm"
-cube-gen "$cube_path" "gross_primary_productivity:dir=$source_dir/MPI_BGC/GPP:var=GPPall"
-cube-gen "$cube_path" "sensible_heat:dir=$source_dir/MPI_BGC/H:var=H"
-cube-gen "$cube_path" "latent_energy:dir=$source_dir/MPI_BGC/LE:var=LE"
-cube-gen "$cube_path" "net_ecosystem_exchange:dir=$source_dir/MPI_BGC/NEE:var=NEE"
-cube-gen "$cube_path" "terrestrial_ecosystem_respiration:dir=$source_dir/MPI_BGC/TER:var=TERall"
-cube-gen "$cube_path" "country_mask:dir=$source_dir/CountryCodes-ISO3166"
-cube-gen "$cube_path" "water_mask:dir=$source_dir/WaterBodies4.0"
-cube-gen "$cube_path" "srex_mask:dir=$source_dir/SREX_mask"
-cube-gen "$cube_path" "lai_fapar_tip:dir=$source_dir/qa4ecv/bhr_tip/daily"
-cube-gen "$cube_path" "albedo_avhrr:dir=$source_dir/qa4ecv/broadband/daily"
+bsub -W 12:00 -M 64000 -e ozone_h.err -o ozone_h.out -J ozone_h cube-gen esdc/ozone/esdc-8d-0.25deg-1x720x1440-1.0.2 "ozone:dir=ozone" -c cube-low-res.config
+bsub -W 12:00 -M 64000 -e ozone_l.err -o ozone_l.out -J ozone_l cube-gen esdc/ozone/esdc-8d-0.083deg-1x2160x4320-1.0.2 "ozone:dir=ozone" -c cube-high-res.config
+bsub -W 12:00 -M 64000 -e aerosol_l.err -o aerosol_l.out -J aerosol_l cube-gen esdc/aerosol/esdc-8d-0.25deg-1x720x1440-1.0.2 "aerosols:dir=aerosol" -c cube-low-res.config
+bsub -W 12:00 -M 64000 -e aerosol_h.err -o aerosol_h.out -J aerosol_h cube-gen esdc/aerosol/esdc-8d-0.083deg-1x2160x4320-1.0.2 "aerosols:dir=aerosol" -c cube-high-res.config
+bsub -W 12:00 -M 64000 -e ch4_l.err -o ch4_l.out -J ch4_l cube-gen esdc/ch4/esdc-8d-0.25deg-1x720x1440-1.0.2 "ch4:dir=CH4" -c cube-low-res.config
+bsub -W 12:00 -M 64000 -e ch4_h.err -o ch4_h.out -J ch4_h cube-gen esdc/ch4/esdc-8d-0.083deg-1x2160x4320-1.0.2 "ch4:dir=CH4" -c cube-high-res.config
+bsub -W 12:00 -M 64000 -e co2_l.err -o co2_l.out -J co2_l cube-gen esdc/co2/esdc-8d-0.25deg-1x720x1440-1.0.2 "co2:dir=CO2" -c cube-low-res.config
+bsub -W 12:00 -M 64000 -e co2_h.err -o co2_h.out -J co2_h cube-gen esdc/co2/esdc-8d-0.083deg-1x2160x4320-1.0.2 "co2:dir=CO2" -c cube-high-res.config
+bsub -W 12:00 -M 64000 -e ozone_temis_l.err -o ozone_temis_l.out -J ozone_temis_l cube-gen esdc/ozone_temis/esdc-8d-0.25deg-1x720x1440-1.0.2 "ozone_temis:dir=ozone_temis" -c cube-low-res.config
+bsub -W 12:00 -M 64000 -e ozone_temis_h.err -o ozone_temis_h.out -J ozone_temis_h cube-gen esdc/ozone_temis/esdc-8d-0.083deg-1x2160x4320-1.0.2 "ozone_temis:dir=ozone_temis" -c cube-high-res.config
+
+
+bsub -W 12:00 -M 64000 -e cloud_l.err -o cloud_l.out -J cloud_l cube-gen esdc/cloud/esdc-8d-0.25deg-1x720x1440-1.0.2 "cloud:dir=cloud" -c cube-low-res.config
+bsub -W 12:00 -M 64000 -e cloud_h.err -o cloud_h.out -J cloud_h cube-gen esdc/cloud/esdc-8d-0.083deg-1x2160x4320-1.0.2 "cloud:dir=cloud" -c cube-high-res.config
+
+bsub -W 12:00 -M 64000 -e soil_l.err -o soil_l.out -J soil_l cube-gen esdc/soil_moisture/esdc-8d-0.25deg-1x720x1440-1.0.2 "soil_moisture_esacci:dir=soil_moisture_tt" -c cube-low-res.config
+bsub -W 12:00 -M 64000 -e soil_h.err -o soil_h.out -J soil_h cube-gen esdc/soil_moisture/esdc-8d-0.083deg-1x2160x4320-1.0.2 "soil_moisture_esacci:dir=soil_moisture_tt" -c cube-high-res.config
+
+bsub -W 23:00 -M 64000 -e sst_l.err -o sst_l.out -J sst_l cube-gen esdc/sst/esdc-8d-0.25deg-1x720x1440-1.0.2 "sst:dir=sst" -c cube-low-res.config
+bsub -W 23:00 -M 64000 -e sst_h.err -o sst_h.out -J sst_h cube-gen esdc/sst/esdc-8d-0.083deg-1x2160x4320-1.0.2 "sst:dir=sst" -c cube-high-res.config
+
+bsub -W 23:00 -M 64000 -e oc_l.err -o oc_l.out -J oc_l cube-gen esdc/oc/esdc-8d-0.25deg-1x720x1440-1.0.2 "oc:dir=OC-daily" -c cube-low-res.config
+bsub -W 23:00 -M 64000 -e oc_h.err -o oc_h.out -J oc_h cube-gen esdc/oc/esdc-8d-0.083deg-1x2160x4320-1.0.2 "oc:dir=OC-daily" -c cube-high-res.config
+
 
 END_TIME=$(date)
 
+echo "Source:  ${source_dir}"
+echo "Config: ${cube_config}"
+echo "Provider: ${cube_provider}"
+echo "Output: ${cube_path}"
 echo STARTTIME: ${START_TIME}
 echo ENDTIME: ${END_TIME}
