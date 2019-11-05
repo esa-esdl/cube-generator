@@ -6,7 +6,7 @@
 5,ERA5,ERA5 Precipitation,https://confluence.ecmwf.int//display/CKB/ERA5+data+documentation,,ERA5,precipitation_era5,2000-01-05,2016-12-30,P8D,,,,
 6,ERA5,Maximum 2 Metre Air Temperature,https://confluence.ecmwf.int//display/CKB/ERA5+data+documentation,,ERA5,max_air_temperature_2m,2000-01-05,2016-12-30,P8D,,,,
 7,ERA5,Minimum 2 Metre Air Temperature,https://confluence.ecmwf.int//display/CKB/ERA5+data+documentation,,ERA5,min_air_temperature_2m,2000-01-05,2016-12-30,P8D,,,,
-8,ESA - Near-real time total ozone column (OMI),Residual MSR-FLT (Stratospheric Part Partial),http://www.temis.nl/protocols/tropo.html,,v.1.2.3.1,free_msr_flt,2008-01-05,2011-12-31,P8D,yes,2019-11-05,no,,,
+8,ESA - Near-real time total ozone column (OMI),Residual MSR-FLT (Stratospheric Part Partial),http://www.temis.nl/protocols/tropo.html,,v.1.2.3.1,free_msr_flt,2008-01-05,2011-12-31,P8D,yes,2019-11-05,no,
 9,ESA - Near-real time total ozone column (OMI),Residual MSR-FLT (Stratospheric Part Partial),http://www.temis.nl/protocols/tropo.html,,v.1.2.3.1,msr_flt,2008-01-05,2011-12-31,P8D,no,,,
 10,ESA - Near-real time total ozone column (OMI),Residual MSR-LRT (Stratospheric Part Partial),http://www.temis.nl/protocols/tropo.html,,v.1.2.3.1,free_msr_lrt,2008-01-05,2011-12-31,P8D,no,,,
 11,ESA - Near-real time total ozone column (OMI),Residual MSR-LRT (Stratospheric Part Partial),http://www.temis.nl/protocols/tropo.html,,v.1.2.3.1,msr_lrt,2008-01-05,2011-12-31,P8D,no,,,
