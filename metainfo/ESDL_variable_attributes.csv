@@ -1,5 +1,5 @@
 long_name
-unit
+units
 spatial_resampling
 temporal_resampling
 valid_pixel_expression
@@ -12,6 +12,7 @@ time_coverage_start
 time_coverage_end
 time_coverage_duration
 time_coverage_resolution
+esdc_version
 orig_attrs
 orig_version
 source
@@ -22,9 +23,4 @@ standard_name_vocabulary
 license
 contributor_name
 contributor_role
-publisher_name
-publisher_url
-publisher_email
 date_modified
-date_issued
-Metadata_conventions
