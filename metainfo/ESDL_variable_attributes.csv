@@ -1,5 +1,7 @@
+standard_name
 long_name
 units
+missing_value
 spatial_resampling
 temporal_resampling
 valid_pixel_expression
