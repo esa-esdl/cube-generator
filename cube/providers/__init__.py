@@ -9,6 +9,8 @@ from .ozone_temis import OzoneTemisProvider
 from .ch4 import CH4Provider
 from .co2 import CO2Provider
 from .aerosols import AerosolsProvider
+from .chlor_a import ChlorAProvider
+from .pml import PmlProvider
 
 __author__ = 'Brockmann Consult GmbH'
 
@@ -18,4 +20,7 @@ __all__ = [
     'CH4Provider',
     'CO2Provider',
     'AerosolsProvider',
+    'ParProvider',
+    'ChlorAProvider',
+    'PmlProvider'
 ]

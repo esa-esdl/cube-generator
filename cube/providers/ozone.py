@@ -34,16 +34,17 @@ class OzoneProvider(CateCubeSourceProvider):
     def compute_source_time_ranges(self):
         file_names = os.listdir(self.dir_path)
         source_time_ranges = list()
-        for file_name in file_names:
-            file = os.path.join(self.dir_path, file_name)
-            dataset = netCDF4.Dataset(file)
-            t1 = dataset.time_coverage_start
-            t2 = dataset.time_coverage_end
-            dataset.close()
-            source_time_ranges.append((datetime(int(t1[0:4]), int(t1[4:6]), int(t1[6:8])),
-                                       datetime(int(t2[0:4]), int(t2[4:6]), int(t2[6:8])),
-                                       file,
-                                       None))
+        for root, sub_dirs, files in os.walk(self.dir_path):
+            for file_name in files:
+                file = os.path.join(self.dir_path, file_name)
+                dataset = netCDF4.Dataset(file)
+                t1 = dataset.time_coverage_start
+                t2 = dataset.time_coverage_end
+                dataset.close()
+                source_time_ranges.append((datetime(int(t1[0:4]), int(t1[4:6]), int(t1[6:8])),
+                                           datetime(int(t2[0:4]), int(t2[4:6]), int(t2[6:8])),
+                                           file,
+                                           None))
         return sorted(source_time_ranges, key=lambda item: item[0])
 
     def transform_source_image(self, source_image):

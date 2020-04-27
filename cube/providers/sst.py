@@ -18,16 +18,16 @@ class SSTProvider(CateCubeSourceProvider):
         self.old_indices = None
 
     _attrs = {'title':'ESA SST CCI OSTIA L4 product', 
-     'data_type':numpy.float32, 
-     'fill_value':numpy.nan, 
+     'data_type': numpy.float64, 
+     'fill_value': -9999, 
      'url':'http://www.esa-sst-cci.org', 
      'project':'Climate Change Initiative - European Space Agency', 
-     'source_version':'v01.1', 
-     'source_dir':'/neodc/esacci/sst/data/lt/Analysis/L4/v01.1'}
+     'source_version':'v02.1', 
+     'source_dir':'/neodc/esacci/sst/data/CDR_v2/Analysis/L4/v2.1'}
 
     @property
     def variable_descriptors(self):
-        ds = xr.open_dataset(self.dir_path + '/2010/01/01/20100101120000-ESACCI-L4_GHRSST-SSTdepth-OSTIA-GLOB_LT-v02.0-fv01.1.nc')
+        ds = xr.open_dataset('/neodc/esacci/sst/data/CDR_v2/Analysis/L4/v2.1/2010/01/01/20100101120000-ESACCI-L4_GHRSST-SSTdepth-OSTIA-GLOB_CDR2.1-v02.0-fv01.0.nc')
         meta = dict()
         meta.update(self._attrs)
         meta.update(ds.attrs)
@@ -41,10 +41,10 @@ class SSTProvider(CateCubeSourceProvider):
                     else:
                         standard_name = ds[vs].standard_name
                     meta_var = {'source_name':vs, 
-                     'long_name':ds[vs].long_name, 
-                     'standard_name':standard_name, 
-                     'valid_min':ds[vs].valid_min, 
-                     'valid_max':ds[vs].valid_max, 
+                     #'long_name':ds[vs].long_name, 
+                     #'standard_name':standard_name, 
+                     #'valid_min':ds[vs].valid_min, 
+                     #'valid_max':ds[vs].valid_max, 
                      'source':ds[vs].source}
                     if 'units' in ds[vs].attrs:
                         meta_var['units'] = ds[vs].units
