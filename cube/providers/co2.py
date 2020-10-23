@@ -56,19 +56,21 @@ class CO2Provider(CateCubeSourceProvider):
                     f = os.path.join(root, file_name)
                     ds = netCDF4.Dataset(f)
                     base_date = date(1990, 1, 1)
-                    t1 = timedelta(numpy.min(ds.variables['time']))
-                    t2 = timedelta(numpy.max(ds.variables['time']))
+                    time_index = 0
+                    for time_bounds in ds.variables['time_bnds']:
+                        time_start = timedelta(numpy.min(time_bounds))
+                        time_end = timedelta(numpy.max(time_bounds))
 
+                        time_start = base_date + time_start
+                        time_end = base_date + time_end
 
-                    t1 = base_date + t1
-                    t2 = base_date + t2
+                        time_start = datetime(time_start.year, time_start.month, time_start.day)
+                        time_end = datetime(time_end.year, time_end.month, time_end.day)
 
-                    t1 = datetime(t1.year, t1.month, t1.day)
-                    t2 = datetime(t2.year, t2.month, t2.day)
+                        source_time_ranges.append((time_start, time_end, f, time_index))
+                        time_index += 1
 
                     ds.close()
-
-                    source_time_ranges.append((t1, t2, f, 0))
 
         return sorted(source_time_ranges, key=lambda item: item[0])
 
